@@ -1,6 +1,6 @@
 # 🎯 Quiz App Vanilla
 
-Aplicación web de preguntas y respuestas construida con **JavaScript Vanilla**, **Node.js** y **MongoDB local**.
+Aplicación web de preguntas y respuestas construida con **JavaScript**, **Node.js** y **MongoDB local**.
 
 ---
 
@@ -20,6 +20,5 @@ Aplicación web de preguntas y respuestas construida con **JavaScript Vanilla**,
 - **Frontend:** HTML, CSS, JavaScript (Vanilla)
 - **Backend:** Node.js con Express
 - **Base de Datos:** MongoDB Local (usando Mongoose)
-- **Herramientas:** MongoDB Compass, Git, VS Code
 
 ---
