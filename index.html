@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quiz App</h1>
+
+            <!-- Pantalla de inicio -->
+      <div id="inicio-container">
+        <img src="img/logo.png" alt="Logo Quiz App" class="logo" />
+
+              <!-- Campo para nombre del jugador -->
+        <input
+          type="text"
+          id="nombre-jugador"
+          placeholder="Ingresa tu nombre"
+          class="nombre-input"
+          required
+          autocomplete="off"
+        />
+
+        <p>
+          ¡Bienvenido/a! Pon a prueba tus conocimientos. Presiona comenzar
+          cuando estés listo.
+        </p>
+
+        <button id="start-btn" class="btn">Comenzar</button>
+      </div>
+
+        <!-- Contenedor del quiz -->
+      <div id="quiz-container" class="hidden">
+        <div id="question">Aquí irá la pregunta</div>
+        <div id="options"></div>
+      </div>
+
+       <!-- Contenedor de resultados -->
+      <div id="result-container" class="hidden">
+        <img src="img/logo.png" alt="Logo Quiz App" class="logo" />
+        <h2>¡Completado!</h2>
+        <p id="score"></p>
+        <button id="ver-ranking-btn" class="btn">Ver Ranking</button>
+      </div>
+
+      <!-- Contenedor de ranking -->
+      <div id="ranking-container" class="hidden">
+        <h2>🏆 Ranking de Jugadores</h2>
+        <ul id="ranking-list"></ul>
+        <button id="reiniciar-btn" class="btn">Volver al inicio</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

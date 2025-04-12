@@ -1,0 +1,11 @@
+# Ignorar dependencias
+node_modules/
+
+# Ignorar archivo de conexión a MongoDB
+server/.env
+# Ignorar archivo local de resultados
+
+
+/server/.env
+/server/node_modules/
+/server/resultados.json
