@@ -2,16 +2,18 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const path = require("path");
 require("dotenv").config();
 
+const app = express(); // nicializamos la app
 
-const app = express();
+// ▶ Servir archivos estáticos del frontend
+app.use(express.static(path.join(__dirname, "../public")));
 
-// ▶ Middleware
+// ▶ Middleware para JSON y CORS
 app.use(express.json());
 app.use(cors());
 
-//  Conexión a MongoDB local
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
